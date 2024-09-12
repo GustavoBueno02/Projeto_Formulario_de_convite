@@ -1,9 +1,12 @@
 #app  {
   display: grid;
   grid-template-columns: 32.78% 67.22%;
+  gap: 2.5rem;
+  padding: 1.25rem;
 
   height: 100vh;
   overflow: hidden;
+ 
 }
 
 main {
@@ -18,12 +21,40 @@ main {
 }
 
 aside {
-  padding: 2rem;
+  height: 45.5rem;
   background-image: url(../assets/Background-img.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  border-radius: 0.75rem;
+  
 
   & .aside-container {
     max-width: 25rem;
   }
 
+  & header {
+    padding: 2rem;
+  
+    & h1 {
+      color: var(--accent-pink);
+      font: var(--logo);
+      margin-bottom: 0.25rem;
+    }
 
+    & p {
+      font: 600 0.75rem/100% var(--font-family-text);
+      color: var(--text-heading);
+    }
+
+    & img {
+      width: 2,865rem;
+      height: 3rem;
+      margin-bottom: 1rem;
+    }
+  } 
 }
+                               
+  
+
+ 
+

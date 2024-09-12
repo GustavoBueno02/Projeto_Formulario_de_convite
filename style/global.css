@@ -16,7 +16,7 @@
 
   --text-md: 600 1rem/100% var(--font-family-text);
   --text-sm: 600 0.875rem/100% var(--font-family-text);
-  --text-xs: 600 0,75rem/100% var(--font-family-text);
+  --text-xs: 600 0.75rem/100% var(--font-family-text);
 
   /* Cores */
   --brand-light: #59B2FF;
@@ -54,6 +54,11 @@ body {
   font: var(--font-family-text);
   color: var(--text-body);
   background-color: var(--shape-background);
-
 }
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 
