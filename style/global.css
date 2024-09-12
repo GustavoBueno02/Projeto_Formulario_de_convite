@@ -49,3 +49,11 @@
   
 }
 
+body {
+  overflow: hidden;
+  font: var(--font-family-text);
+  color: var(--text-body);
+  background-color: var(--shape-background);
+
+}
+
