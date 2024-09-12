@@ -26,7 +26,7 @@
           <h1>Festivite</h1>
           <p>Crie um convite digital para o seu evento</p>
         </header>
-        
+
       </div>
     </aside>
 
@@ -36,9 +36,74 @@
           <h1>
             Crie seu convite
           </h1>
+
+          <!--enctype="multipart/form-data" necessário quando há um campo do tipo file-->
+          <form method="post" enctype="multipart/form-data">
+            <fieldset class="event">
+
+              <legend>
+                <img src="assets/icons/calendar.svg" alt="ícone calendário">
+
+                Sobre o evento
+              </legend>
+
+              <div class="input-wrapper">
+                <label for="event-name">Título</label>
+                <input id="event-name" name="event-name" type="text" placeholder="Nome do evento">
+              </div>
+
+              <div class="flex">
+                <div class="input-wrapper">
+                  <label for="">Incio</label>
+                  <input type="datetime-local" name="date-inicial" id="datetime" lang="pt-BR">
+
+                  <label for="">Fim</label>
+                  <input type="datetime-local" name="date-final" id="datetime" lang="pt-BR">
+                </div>
+              </div>
+
+              <div class="flex">
+
+                <div class="input-wrapper">
+
+                  <label for="type-event">Tipo</label>
+                  <div class="segmented-control">
+
+                    <div class="radio-inner">
+                      <img src="assets/icons/building-2.svg" alt="ícone de prédio">
+                      <label for="type-event">Presencial</label>
+                      <input name="type-event" type="radio" id="type-event">
+                    </div>
+
+                    <div class="radio-inner">
+                      <img src="assets/icons/video.svg" alt="ícone de vídeo">
+                      <label for="type-event">Online</label>
+                      <input name="type-event" type="radio" id="type-event">
+                    </div>
+
+                  </div>
+
+                </div>
+
+                <div class="input-wrapper">
+                  <label for="local-event">Local</label>
+                  <input name="local-event" type="text" id="local-event" placeholder="Link ou endereço">
+                </div>
+
+              </div>
+              <div class="textarea-wrapper">
+                <label for="description-event">Descrição</label>
+                <input name="description-event" type="text" id="description-event"
+                  placeholder="Escreva sobre os detalhes do evento">
+              </div>
         </div>
+
+
+        </fieldset>
+        </form>
       </div>
-    </main>
+  </div>
+  </main>
 
   </div>
 

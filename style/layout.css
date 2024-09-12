@@ -1,27 +1,57 @@
 #app  {
   display: grid;
-  grid-template-columns: 32.78% 67.22%;
+  grid-template-columns: 1fr 2fr;
   gap: 2.5rem;
   padding: 1.25rem;
 
-  height: 100vh;
-  overflow: hidden;
+  height: 100vh; /*100% da área visisvel pagina*/
+  max-width: 80rem;
+  margin-inline: auto;
+  
+  overflow: hidden; /*para não ter rolagem na pagina*/
  
 }
 
 main {
-  overflow: auto;
+  width: 51.25rem;
+  height: 123,81rem;
+  background-color: var(--shape-body);
+  border-radius: 0.75rem;
+  margin: 1.25rem 1.25rem 1.25rem 0;
+
+  overflow: auto; /*comando para ter rolagem da pagina*/
   padding: 5rem 8.125rem;
+  padding-block: 5rem;
 
 & .main-container{
   max-width: 28,75rem;
   margin: auto;
-}
+
+  & .title {
+    
+    width: 35rem;
+    padding-bottom: 2.5rem;
+    
+    & h1 {
+     
+      font: 800 1.75rem/100% var(--font-family-title);
+      color: var(--text-heading);
+      }
+
+  }
+
+  & h1 {
+    font: 800 1.75rem/100% var(--font-family-title);
+    color: var(--text-heading);
+    }
+  }
  
 }
 
 aside {
+  margin-top: 1.25rem ;
   height: 45.5rem;
+  width: 25rem;
   background-image: url(../assets/Background-img.png);
   background-repeat: no-repeat;
   background-size: contain;

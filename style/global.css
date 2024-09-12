@@ -50,10 +50,19 @@
 }
 
 body {
-  overflow: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+
+  overflow: hidden; /*para não haver rolagem na pagina*/
   font: var(--font-family-text);
   color: var(--text-body);
   background-color: var(--shape-background);
+}
+
+h1 {
+  
+  color: var( --text-heading);
 }
 
 img {
