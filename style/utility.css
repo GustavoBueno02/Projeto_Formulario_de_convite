@@ -1,0 +1,11 @@
+.flex {
+  display: flex;
+}
+
+.gap-16 {
+  gap: 1rem;
+}
+
+.flex-1 {
+  flex: 1;
+}

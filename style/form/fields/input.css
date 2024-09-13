@@ -1,0 +1,55 @@
+label {
+  font: var(--text-sm);
+  color: var(--text-body);
+
+  margin-bottom: 0.75rem;
+  display: block;
+}
+
+input {
+  height: 3rem;
+}
+
+input,
+textarea,
+select {
+  width: 100%;
+  padding: 0.812rem 1rem;
+  border-radius: 0.5rem;
+  border: none;
+  outline:  1px solid var(--input-stroke);
+  background-color: var(  --input-base);
+  color: var(--text-heading);
+  font: var(  --text-md);
+
+  &:hover,
+  &:focus {
+    outline: 1px solid var(--brand-light);
+    outline-offset: 0.1px; /* sem esse código, a bordar não funciona no Safari*/
+  }
+
+  &::placeholder {
+    color: var(  --input-placeholder);
+  }
+
+  &:invalid {
+    outline: var(--feedback);
+  }
+
+  &:valid + .error {
+    display: none;
+  }
+}
+
+input[type="datetime-local"] {
+  color-scheme: dark;
+  &::-webkit-calendar-picker-indicator {
+    /* filter: invert(1); */
+    /* color-scheme: dark; */
+    opacity: 0.8;
+  }
+}
+
+.input-wrapper {
+  margin-bottom: 1rem;
+}

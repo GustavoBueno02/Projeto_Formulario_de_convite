@@ -52,19 +52,20 @@
                 <input id="event-name" name="event-name" type="text" placeholder="Nome do evento">
               </div>
 
-              <div class="flex">
-                <div class="input-wrapper">
+              <div class="flex gap-16">
+                <div class="input-wrapper flex-1">
                   <label for="">Incio</label>
                   <input type="datetime-local" name="date-inicial" id="datetime" lang="pt-BR">
-
+                </div>
+                <div class="input-wrapper flex-1">
                   <label for="">Fim</label>
                   <input type="datetime-local" name="date-final" id="datetime" lang="pt-BR">
                 </div>
               </div>
 
-              <div class="flex">
+              <div class="flex gap-16">
 
-                <div class="input-wrapper">
+                <div class="input-wrapper flex-1">
 
                   <label for="type-event">Tipo</label>
                   <div class="segmented-control">
@@ -72,7 +73,7 @@
                     <div class="radio-inner">
                       <img src="assets/icons/building-2.svg" alt="ícone de prédio">
                       <label for="type-event">Presencial</label>
-                      <input name="type-event" type="radio" id="type-event">
+                      <input name="type-event" type="radio" id="type-event" checked>
                     </div>
 
                     <div class="radio-inner">
@@ -85,7 +86,7 @@
 
                 </div>
 
-                <div class="input-wrapper">
+                <div class="input-wrapper flex-1">
                   <label for="local-event">Local</label>
                   <input name="local-event" type="text" id="local-event" placeholder="Link ou endereço">
                 </div>
