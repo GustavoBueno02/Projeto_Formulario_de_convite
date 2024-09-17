@@ -66,16 +66,17 @@
 }
 
   #personalization {
-    #main-colors {
+    #main-colors,
+    #event-theme {
       label {
         color: var(--text-heading);
-        
       }
     }
   }
 
   #personalization {
-    #main-colors {
+    #main-colors,
+    #event-theme {
       padding-bottom: 1.75rem;
 
       .radio-wrapper {
@@ -160,6 +161,46 @@
               background-color: var(--accent-cyan);
             }
           }
+        }
+      }
+    }
+  }
+
+  .event-theme {
+    .radio-wrapper {
+      display: flex;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+      .radio-inner {
+        margin-top: 1rem;
+        background-color: var(--shape-button);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        outline: 1px solid var(--input-stroke);
+        border: 2px solid transparent;
+        position: relative;
+        border-radius: 0.5rem;
+        max-width: 8.375rem;
+        label {
+          padding-top: 0.5rem;
+        }
+        img {
+          border-radius: 0.25rem;
+          padding: 0.25rem;
+        }
+        input[type="radio"] {
+          all: unset;
+          inset: 0;
+          position: absolute;
+          &:checked {
+            outline: 2px solid var(--brand-light);
+            border-radius: 0.5rem;
+          }
+        }
+        &:hover {
+          border-radius: 0.5rem;
+          background-color: var( --shape-hover);
         }
       }
     }
