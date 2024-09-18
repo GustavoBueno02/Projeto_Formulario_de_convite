@@ -57,5 +57,22 @@ legend {
 fieldset {
   border: none;
   margin-bottom: 3rem;
-  
+}
+
+#others {
+  display: flex;
+  margin-top: 1.75rem;
+
+  label {
+    color: var(--text-body);
+  }
+
+  #style {
+    flex: 1;
+    max-width: 11rem;
+  }
+
+  #cover-photo {
+    flex: 2;
+  }
 }
