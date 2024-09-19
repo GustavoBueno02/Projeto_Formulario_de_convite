@@ -71,4 +71,10 @@ img {
   height: auto;
 }
 
+.divider {
+  height: 1px;
+  background-color: var(--input-stroke);
+  margin-bottom: 2.5rem;
+}
+
 
