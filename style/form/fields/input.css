@@ -54,6 +54,14 @@ input[type="datetime-local"] {
   margin-bottom: 1rem;
 }
 
+ input[type="email"] {
+  width: 17rem;
+}
+
+input[type="tel"] {
+  width: 17rem;
+} 
+
  #cover-photo {
   .input-wrapper {
     all: unset;
@@ -101,4 +109,10 @@ input[type="datetime-local"] {
   display: flex;
   align-items: center;
   gap: 0.5rem;
+  img {
+    width: 1rem;
+    height: 1rem;
+    color: var(--feedback);
+  }
 }
+

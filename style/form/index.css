@@ -1,8 +1,8 @@
 @import url(fields/index.css);
-
+@import url(button.css);
 main {
   width: 51.25rem;
-  height: 123,81rem;
+  height: 123, 81rem;
   background-color: var(--shape-body);
   border-radius: 0.75rem;
   margin: 1.25rem 1.25rem 1.25rem 0;
@@ -15,64 +15,62 @@ main {
     width: 0.265rem;
   }
 
-& .main-container{
-  max-width: 28,75rem;
-  margin: auto;
+  & .main-container {
+    max-width: 28, 75rem;
+    margin: auto;
 
-  & .title {
-    
-    width: 35rem;
-    padding-bottom: 2.5rem;
-    
+    & .title {
+      width: 35rem;
+      padding-bottom: 2.5rem;
+
+      & h1 {
+        margin-bottom: 2.5rem;
+        font: 800 1.75rem/100% var(--font-family-title);
+        color: var(--text-heading);
+      }
+    }
+
     & h1 {
       margin-bottom: 2.5rem;
       font: 800 1.75rem/100% var(--font-family-title);
       color: var(--text-heading);
-      }
-
-  }
-
-  & h1 {
-    font: 800 1.75rem/100% var(--font-family-title);
-    color: var(--text-heading);
     }
   }
-}
+  legend {
+    font: var(--text-sm);
+    color: var(--text-heading);
+    margin-bottom: 1.5rem;
 
-legend {
-  font: var(--text-sm);
-  color: var(--text-heading);
-  margin-bottom: 1.5rem;
+    display: flex;
+    gap: 0.75rem;
+    align-items: center;
 
-  display: flex;
-  gap: 0.75rem;
-  align-items: center;
-
-  img {
-    width: 1.5rem;
-    height: 1.5rem;
-  }
-}
-
-fieldset {
-  border: none;
-  margin-bottom: 3rem;
-}
-
-#others {
-  display: flex;
-  margin-top: 1.75rem;
-
-  label {
-    color: var(--text-body);
+    img {
+      width: 1.5rem;
+      height: 1.5rem;
+    }
   }
 
-  #style {
-    flex: 1;
-    max-width: 11rem;
+  fieldset {
+    border: none;
+    margin-bottom: 3rem;
   }
 
-  #cover-photo {
-    flex: 2;
+  #others {
+    display: flex;
+    margin-top: 1.75rem;
+
+    label {
+      color: var(--text-body);
+    }
+
+    #style {
+      flex: 1;
+      max-width: 11rem;
+    }
+
+    #cover-photo {
+      flex: 2;
+    }
   }
 }

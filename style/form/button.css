@@ -1,0 +1,17 @@
+button {
+  all: unset;
+  padding: 0.8125rem 1.25rem;
+  background-color: #3487CF;
+  border-radius: 0.5rem;
+  font: var( --text-md);
+  color: var(--text-heading);
+
+  float: right;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+
+  &:hover {
+    background-color: var(--brand-dark);
+  }
+}
